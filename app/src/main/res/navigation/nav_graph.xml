@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_graph_trending_books_fragment">
+
+    <fragment
+        android:id="@+id/nav_graph_trending_books_fragment"
+        android:name="com.haris.bookhunt.trending_books.TrendingBooksFragment"
+        tools:layout="@layout/fragment_trending_books" >
+        <action
+            android:id="@+id/nav_graph_trending_books_to_search_action"
+            app:destination="@id/nav_graph_search_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_graph_search_fragment"
+        android:name="com.haris.bookhunt.search.SearchFragment"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/nav_graph_search_to_trending_books_action"
+            app:destination="@id/nav_graph_trending_books_fragment" />
+    </fragment>
+
+</navigation>

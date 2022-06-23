@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/nav_graph_trending_books_fragment"
+        android:title="Trending"
+        android:icon="@drawable/ic_baseline_book_24" />
+
+    <item
+        android:id="@id/nav_graph_search_fragment"
+        android:title="Search"
+        android:icon="@drawable/ic_baseline_search_24" />
+</menu>
